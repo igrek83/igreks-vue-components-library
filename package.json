@@ -1,0 +1,51 @@
+{
+  "name": "igreks-vue-components-library",
+  "author": "Igor Golanov",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igrek83/igreks-vue-components-library.git"
+  },
+  "keywords": [
+    "vue3",
+    "vue",
+    "vuejs",
+    "component",
+    "library"
+  ],
+  "files": [
+    "dist",
+    "src/components/"
+  ],
+  "main": "./dist/component.umd.cjs",
+  "module": "./dist/component.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/component.esm.js",
+      "require": "./dist/component.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.0.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@vitejs/plugin-vue": "4.4.0",
+    "path": "0.12.7",
+    "typescript": "5.2.2",
+    "vite": "4.5.0",
+    "vite-plugin-dts": "3.6.3",
+    "vue-tsc": "1.8.22"
+  }
+}
